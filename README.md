@@ -24,4 +24,23 @@ This wrapper runs the exact three analysis steps used for these figures:
 Additional documentation:
 
 - `Desktop/Dr/docs/poster_bray_mean_png_pipeline.md`
+
+## ESBL/non-ESBL DAA pipeline
+
+Main entry point:
+
+```bash
+/usr/local/bin/Rscript Desktop/Dr/scripts/build_esbl_non_esbl_repo_pipeline.R \
+  --image "/full/path/to/your/esbl_status_screenshot.png"
+```
+
+This wrapper runs:
+
+1. `Desktop/Dr/scripts/extract_esbl_status_from_screenshot.py`
+2. `Desktop/Dr/scripts/build_esbl_non_esbl_daa_plots.R`
+3. `Desktop/Dr/scripts/compute_esbl_species_mean_abundance.py`
+
+Additional documentation:
+
+- `Desktop/Dr/docs/esbl_non_esbl_daa_pipeline.md`
 # JKG_DR
